@@ -12,4 +12,4 @@ There is a [compiled release](https://github.com/autr/shotta/releases) for macOS
 
 ## Quick Stat
 
-Press `h` to show full help. There are two main modes - `CROP` and `RESIZE` - which use the ratio of the window but without downscaling the screenshot. The output screenshot will always be scaled to the longest size of the ratio (ie. no lossiness).
+Press `spacebar` to take a screenshot and press `h` to show full help. There are two main modes - `crop` and `resize` - which use the ratio of the window but without downscaling the screenshot. The output screenshot will always be scaled to the longest size of the ratio (ie. no lossiness).
