@@ -1,21 +1,11 @@
-# SHOTTA
+# Shotta
 
-SHOTTA is a simple app for quickly grabbing screenshots from a video to Desktop. 
+A quick [OpenFrameworks](https://openframeworks.cc/) app for grabbing screenshots from a video to Desktop:
 
 ![shotta](screen.png)
 
-On MacOS it uses as fork of [ofxHAPAVPlayer](https://github.com/autr/ofxHAPAVPlayer) for nicer navigation of the timeline (skipping, playback, randomised positions), but it should also compile for Windows/Linux without much fuss.
+On MacOS it uses as fork of [ofxHAPAVPlayer](https://github.com/autr/ofxHAPAVPlayer) for fast timeline navigation, and will revert to ofVideoPlayer for other targets.
 
-## Cropping and Scaling
+## Getting Started
 
-There are two modes: CROP and RESIZE, which use the ratio of the window to either: crop or toggle. The pixel size of the window won’t effect the output resolution, and the app will work out the most “non-destructive” resolution to output as (ie. longest side).
-
-## Instructions
-
-```
-To change the ratio (4:3, 16:9, etc) press 1 - 6
-To toggle CROP / RESIZE press Tab
-To take a screen grab press C (outputs to the Desktop)
-To randomise press R
-To skip around on the timeline, press LEFT and RIGHT (and with SHIFT)
-```
+Press `h` to show full help. There are two main modes - `CROP` and `RESIZE` - which use the ratio of the window but without downscaling the screenshot. The output screenshot will always be scaled to the longest size of the ratio (ie. no lossiness).
